@@ -8,6 +8,9 @@
     <title>Document</title>
     <!-- tailwind stylesheet -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/48dd45c00b.js" crossorigin="anonymous"></script>
+
     <!-- customize css -->
     <script>
         tailwind.config = {
@@ -196,11 +199,11 @@
             <div class="text-center space-y-6">
                 <h2 class="text-5xl font-bold">News & Events</h2>
                 <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
+                    alteration in some form, <br> by injected humour, or randomised words which don't look even slightly
                     believable.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 items-center justify-center gap-6 mt-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
                 <div class="border-2 border-[#D2D2D2] rounded-lg">
                     <div class="p-5">
                         <img class="mx-auto w-full" src="images/news-1.png" alt="">
@@ -244,8 +247,72 @@
         </section>
     </main>
 
-    <footer>
+    <!-- footer -->
+    <footer
+        class="mt-20 md:mt-32 bg-gradient-to-l from-[rgba(255,0,0,0.1)] to-[rgba(255,137,56,0.1)] text-center sm:text-start">
+        <div class="container mx-auto px-1 py-16 md:py-32">
+            <div class="flex flex-col sm:flex-row justify-between items-center">
+                <div class="mb-5 sm:mb-0">
+                    <img src="images/cup.png" alt="">
+                </div>
+                <div class="flex flex-col sm:flex-row items-center gap-10">
+                    <p class="text-xl">Ready to get started?</p>
+                    <button
+                        class="text-white py-4 px-5 rounded-lg text-xl bg-gradient-to-l from-[#FF0000] to-[#FF8938]">
+                        Get Started
+                    </button>
+                </div>
+            </div>
 
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mt-12 lg:mt-24">
+                <div class="space-y-4">
+                    <h5 class="font-semibold text-xl">Quick Links</h5>
+                    <p>Home</p>
+                    <p>About Us</p>
+                    <p>Insurance</p>
+                    <p>Privacy Policy</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="font-semibold text-xl">Our Service</h5>
+                    <p>Life Insurance</p>
+                    <p>Car Insurance</p>
+                    <p>Health Insurance</p>
+                    <p>House Insurance</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="font-semibold text-xl">Help</h5>
+                    <p>FAQs</p>
+                    <p>Contact Us</p>
+                </div>
+
+                <div class="space-y-4">
+                    <h5 class="font-semibold text-xl">Subscribe to our newsletter</h5>
+                    <div class="flex items-center justify-center sm:justify-start">
+                        <form>
+                            <input type="email" value="" placeholder="Email address" class="block pl-0 pr-8 py-4 bg-transparent border-b w-full border-[#494949] text-[#494949] placeholder-[#494949] text-lg 
+                            focus:outline-none" />
+                        </form>
+
+                        <button
+                            class="text-white p-2 rounded-full text-xl bg-gradient-to-l from-[#FF0000] to-[#FF8938]">
+                            <img src="images/greater-than.png" alt="">
+                        </button>
+                    </div>
+
+                    <div class="text-2xl">
+                        <i class="fa-brands fa-facebook mr-6"></i>
+                        <i class="fa-brands fa-twitter mr-6"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-7 lg:mt-14">
+                <p>&copy; 2023 UIDesign.to - All rights reserved.</p>
+            </div>
+        </div>
     </footer>
 </body>
 
